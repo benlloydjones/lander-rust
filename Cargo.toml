@@ -1,0 +1,18 @@
+[package]
+name = "lander-rust"
+version = "0.1.0"
+description = "A lander clone"
+license = "MIT/Apache-2.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+console_error_panic_hook = "0.1.7"
+geo = "0.22"
+getrandom = { version = "0.2", features = ["js"] }
+rand = "0.8.5"
+wasm-bindgen = { version = "0.2.81", features = ["serde-serialize"] }
+web-sys = "0.3.58"
+
